@@ -1,0 +1,37 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/thin_block",
+	"textures": {
+		"1": "block/paper",
+		"particle": "block/snow",
+		"texture": "block/snow",
+		"terracotta": "block/brown_terracotta"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 3],
+			"to": [13, 1, 13],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, 8, 10]},
+			"faces": {
+				"north": {"uv": [0, 14, 16, 16], "texture": "#texture", "cullface": "north"},
+				"east": {"uv": [0, 14, 16, 16], "texture": "#texture", "cullface": "east"},
+				"south": {"uv": [0, 14, 16, 16], "texture": "#texture", "cullface": "south"},
+				"west": {"uv": [0, 14, 16, 16], "texture": "#texture", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "down"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 0, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0], "texture": "#terracotta"},
+				"east": {"uv": [0, 0, 16, 0], "texture": "#terracotta"},
+				"south": {"uv": [0, 0, 16, 0], "texture": "#terracotta"},
+				"west": {"uv": [0, 0, 16, 0], "texture": "#terracotta"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#terracotta"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#terracotta"}
+			}
+		}
+	]
+}

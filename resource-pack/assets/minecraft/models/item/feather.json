@@ -1,0 +1,22 @@
+{
+    "parent": "item/generated",
+	
+    "textures": {
+        "layer0": "item/feather"
+    },
+	
+	"overrides": [
+		{"predicate": {"custom_model_data":1037}, "model": "item/pets/red_mini_crewmate"},
+		{"predicate": {"custom_model_data":2037}, "model": "item/pets/orange_mini_crewmate"},
+		{"predicate": {"custom_model_data":3037}, "model": "item/pets/yellow_mini_crewmate"},
+		{"predicate": {"custom_model_data":4037}, "model": "item/pets/green_mini_crewmate"},
+		{"predicate": {"custom_model_data":5037}, "model": "item/pets/lime_mini_crewmate"},
+		{"predicate": {"custom_model_data":6037}, "model": "item/pets/cyan_mini_crewmate"},
+		{"predicate": {"custom_model_data":7037}, "model": "item/pets/blue_mini_crewmate"},
+		{"predicate": {"custom_model_data":8037}, "model": "item/pets/purple_mini_crewmate"},
+		{"predicate": {"custom_model_data":9037}, "model": "item/pets/pink_mini_crewmate"},
+		{"predicate": {"custom_model_data":10037}, "model": "item/pets/white_mini_crewmate"},
+		{"predicate": {"custom_model_data":11037}, "model": "item/pets/black_mini_crewmate"},
+		{"predicate": {"custom_model_data":12037}, "model": "item/pets/brown_mini_crewmate"}
+	]
+}

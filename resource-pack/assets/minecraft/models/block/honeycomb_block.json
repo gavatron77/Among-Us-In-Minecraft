@@ -1,0 +1,19 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/cube_all",
+	"textures": {
+		"1": "block/card",
+		"particle": "block/card"
+	},
+	"elements": [
+		{
+			"from": [1.25, 15, 4],
+			"to": [14.65, 17, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 23, 12]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		}
+	]
+}

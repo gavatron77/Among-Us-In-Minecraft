@@ -1,0 +1,11 @@
+{
+    "parent": "item/generated",
+	
+    "textures": {
+        "layer0": "block/wither_rose"
+    },
+	
+	"overrides": [
+		{"predicate": {"custom_model_data":713}, "model": "item/pets/turtle_pet"}
+	]
+}

@@ -1,0 +1,24 @@
+{
+    "language.name": "§eAmong Us Asset",
+    "language.region": "Space",
+    "language.code": "Among_Us",
+
+	"petsheading": "comment",
+    "block.minecraft.wither_rose": "Turtle pet",
+    "item.minecraft.feather": "Mini crewmate pet",
+    "item.minecraft.milk_bucket": "Clear pets",
+
+    "dyesheading": "comment",
+    "item.minecraft.red_dye": "§4Shift click to select color",
+    "item.minecraft.orange_dye": "§6Shift click to select color",
+    "item.minecraft.yellow_dye": "§eShift click to select color",
+    "item.minecraft.green_dye": "§2Shift click to select color",
+    "item.minecraft.lime_dye": "§aShift click to select color",
+    "item.minecraft.cyan_dye": "§3Shift click to select color",
+    "item.minecraft.blue_dye": "§1Shift click to select color",
+    "item.minecraft.purple_dye": "§5Shift click to select color",
+    "item.minecraft.pink_dye": "§dShift click to select color",
+    "item.minecraft.white_dye": "§fShift click to select color",
+    "item.minecraft.black_dye": "§0Shift click to select color",
+    "item.minecraft.brown_dye": "§7Shift click to select color"
+}

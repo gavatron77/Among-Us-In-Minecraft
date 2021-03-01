@@ -1,0 +1,20 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"bar": "entity/bell/bell_body"
+	},
+	"elements": [
+		{
+			"from": [7, 13, 7],
+			"to": [9, 16, 9],
+			"faces": {
+				"north": {"uv": [7, 2, 9, 5], "texture": "#bar"},
+				"east": {"uv": [6, 4, 8, 7], "texture": "#bar"},
+				"south": {"uv": [6, 2, 8, 5], "texture": "#bar"},
+				"west": {"uv": [4, 2, 6, 5], "texture": "#bar"},
+				"up": {"uv": [3, 0, 5, 2], "texture": "#bar", "cullface": "up"},
+				"down": {"uv": [0, 3, 2, 5], "texture": "#bar"}
+			}
+		}
+	]
+}
