@@ -1,14 +1,13 @@
 {
-    "parent": "item/generated",
-	
-    "textures": {
-        "layer0": "item/written_book"
-    },
-	
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/carrot_on_a_stick"
+	},
 	"overrides": [
-		{"predicate": {"custom_model_data":5480}, "model": "item/sabotagebutton"},
-		{"predicate": {"custom_model_data":7000}, "model": "item/doorsbutton"},
-		{"predicate": {"custom_model_data":4073}, "model": "item/votebutton"},
-		{"predicate": {"custom_model_data":6455}, "model": "item/boardingpass"}
+		{ "predicate": { "custom_model_data": 1}, "model": "item/books/sabotagebutton" },
+		{ "predicate": { "custom_model_data": 2}, "model": "item/books/doorsbutton" },
+		{ "predicate": { "custom_model_data": 3}, "model": "item/books/votebutton" },
+		{ "predicate": { "custom_model_data": 4}, "model": "item/books/boardingpass" },
+		{ "predicate": { "custom_model_data": 5}, "model": "item/books/howtobook" }
 	]
 }

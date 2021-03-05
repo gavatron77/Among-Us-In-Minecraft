@@ -2,6 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
+		"particle": "block/angled_top",
 		"top": "block/angled_top",
 		"sides": "block/angled_sides"
 	},

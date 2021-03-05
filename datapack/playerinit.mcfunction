@@ -1,9 +1,10 @@
-
+say init
 # Misc
 effect clear @a
 team leave @a
 scoreboard players set imp_alive kill_cooldown 0
 scoreboard players set crew_alive kill_cooldown 0
+scoreboard players set total_crew kill_cooldown 0
 tag @a add initialized
 kill @e[type=boat]
 

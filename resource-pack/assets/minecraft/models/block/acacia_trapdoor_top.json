@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
+		"particle": "block/scaffolding_grate",
 		"bottom": "block/scaffolding_grate",
 		"sides": "block/stone"
 	},

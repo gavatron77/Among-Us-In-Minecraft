@@ -8,4 +8,4 @@ function au:playerinit
 function au:tasks/cardswipe_create
 
 scoreboard players set @a lobby_timer 200
-
+tag @a add in_game

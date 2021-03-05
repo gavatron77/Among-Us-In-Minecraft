@@ -3,18 +3,18 @@
 scoreboard players remove @a lobby_timer 1
 tag @a[tag=anomaly_randomized] remove anomaly_randomized
 
-execute as @a[tag=blue,scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=blue]
-execute as @a[tag=red,scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=red]
-execute as @a[tag=yellow,scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=yellow]
-execute as @a[tag=orange,scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=orange]
-execute as @a[tag=black,scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=black]
-execute as @a[tag=white,scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=white]
-execute as @a[tag=cyan,scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=cyan]
-execute as @a[tag=purple,scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=purple]
-execute as @a[tag=pink,scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=pink]
-execute as @a[tag=brown,scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=brown]
-execute as @a[tag=green,scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=green]
-execute as @a[tag=lime,scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=lime]
+execute as @s[scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=red]
+execute as @s[scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=blue]
+execute as @s[scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=yellow]
+execute as @s[scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=orange]
+execute as @s[scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=black]
+execute as @s[scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=white]
+execute as @s[scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=cyan]
+execute as @s[scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=purple]
+execute as @s[scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=pink]
+execute as @s[scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=brown]
+execute as @s[scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=green]
+execute as @s[scores={lobby_timer=199}] run kill @e[type=armor_stand,tag=lime]
 
 # Spawn Victor Armor Stands
 execute as @a[scores={lobby_timer=199},tag=winner,tag=blue] run summon minecraft:armor_stand 64 51 -115 {Invulnerable:1,ArmorItems:[{Count:1,id:leather_boots,tag:{display:{color:3949738}}},{Count:1,id:leather_leggings,tag:{display:{color:3949738}}},{Count:1,id:leather_chestplate,tag:{display:{color:3949738}}},{Count:1,id:leather_helmet,tag:{display:{color:3949738}}}], NoGravity:1b, NoBasePlate: 1b,DisabledSlots:2039583,Tags:["blue","crewmate","as_sealed","as_locked"]}
@@ -66,6 +66,7 @@ execute as @a[tag=imposter,limit=1,scores={lobby_timer=199}] at @s if entity @s[
 execute as @a[tag=crewmate,limit=1,scores={lobby_timer=199}] at @s if entity @s[tag=winner] run execute as @a[distance=..25] at @s run playsound minecraft:entity.ghast.death master @s ~ ~ ~
 
 # Back to Lobby
+execute as @a[scores={lobby_timer=0}] run tag @a remove in_game
 execute as @a[scores={lobby_timer=0}] run tp @a 99.0 66.0 -82.5 -180 0
 execute as @a[scores={lobby_timer=0}] run function au:playerinit
 execute as @a[scores={lobby_timer=0}] run scoreboard players set @a game_state -1

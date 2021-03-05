@@ -4,8 +4,8 @@
     "language.code": "Among_Us",
 
 	"petsheading": "comment",
-    "block.minecraft.wither_rose": "Turtle pet",
-    "item.minecraft.feather": "Mini crewmate pet",
+    "block.minecraft.wither_rose": "§9Turtle pet",
+    "item.minecraft.feather": "§9Mini crewmate pet",
     "item.minecraft.milk_bucket": "Clear pets",
 
     "dyesheading": "comment",
@@ -20,5 +20,7 @@
     "item.minecraft.pink_dye": "§dShift click to select color",
     "item.minecraft.white_dye": "§fShift click to select color",
     "item.minecraft.black_dye": "§0Shift click to select color",
-    "item.minecraft.brown_dye": "§7Shift click to select color"
+    "item.minecraft.brown_dye": "§7Shift click to select color",
+	
+	"block.minecraft.sugar_cane": "§2Success!"
 }

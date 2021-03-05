@@ -1,3 +1,5 @@
+# Give out tutorial books
+function au:tasks/how_to_books
 
 # Cameras
 execute at @e[tag=cameras_check] as @a[distance=..2] if score @s task_request matches 1.. run tag @s add cameras
@@ -370,6 +372,14 @@ execute if score Player_Speed Settings matches 3 run effect give @a[tag=!ghost,s
 execute if score Player_Speed Settings matches 4 run effect give @a[tag=!ghost,scores={in_task=0}] speed 2 4 true
 execute if score Player_Speed Settings matches 5 run effect give @a[tag=!ghost,scores={in_task=0}] speed 2 5 true
 
+scoreboard players set crew_alive kill_cooldown 0
+execute as @a[tag=crewmate,tag=!ghost] run scoreboard players add crew_alive kill_cooldown 1
+scoreboard players set total_crew kill_cooldown 0
+execute as @a[tag=crewmate] run scoreboard players add total_crew kill_cooldown 1
+execute as @a[limit=1,scores={lobby_timer=50}] run scoreboard players operation Total_Tasks Main_Cooldowns *= total_crew kill_cooldown
+execute as @a[limit=1,scores={lobby_timer=50}] store result bossbar tasks:completed max run scoreboard players get Total_Tasks Main_Cooldowns
+scoreboard players set imp_alive kill_cooldown 0
+execute as @a[tag=imposter,tag=!ghost] run scoreboard players add imp_alive kill_cooldown 1
 
 # Ghost Things
 effect give @a[tag=ghost,scores={in_task=0}] invisibility 2 0 true

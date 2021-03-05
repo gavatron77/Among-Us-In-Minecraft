@@ -48,11 +48,12 @@ execute as @a[scores={lobby_timer=120},tag=crewmate,limit=1] run function au:dea
 execute as @a[scores={lobby_timer=0}] run effect clear @a
 
 execute as @a[tag=crewmate,scores={lobby_timer=100}] run scoreboard players add crew_alive kill_cooldown 1
+execute as @a[tag=crewmate,scores={lobby_timer=100}] run scoreboard players add total_crew kill_cooldown 1
 execute as @a[tag=imposter,scores={lobby_timer=100}] run scoreboard players add imp_alive kill_cooldown 1
 
 
 # Sum of task settings *= crewmates = Task Total
-execute as @a[limit=1,scores={lobby_timer=50}] run scoreboard players operation Total_Tasks Main_Cooldowns *= crew_alive kill_cooldown
+execute as @a[limit=1,scores={lobby_timer=50}] run scoreboard players operation Total_Tasks Main_Cooldowns *= total_crew kill_cooldown
 execute as @a[limit=1,scores={lobby_timer=50}] store result bossbar tasks:completed max run scoreboard players get Total_Tasks Main_Cooldowns
 
 

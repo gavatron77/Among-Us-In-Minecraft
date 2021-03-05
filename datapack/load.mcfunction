@@ -17,6 +17,7 @@ scoreboard objectives add RNG dummy
 scoreboard objectives add ambient_delay dummy
 scoreboard objectives add Main_Cooldowns dummy
 title @a times 20 120 20
+scoreboard objectives add just_joined minecraft.custom:minecraft.leave_game
 
 # Cameras
 scoreboard objectives add security dummy
