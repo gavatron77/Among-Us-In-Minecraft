@@ -10,6 +10,18 @@ kill @e[type=boat]
 
 # Sounds
 scoreboard players set @a comms_ambient 0
+scoreboard players set @a weapons_ambient 0
+scoreboard players set @a shields_ambient 0
+scoreboard players set @a cafe_ambient 0
+scoreboard players set @a elect_ambient 0
+scoreboard players set @a medbay_ambient 0
+scoreboard players set @a reactor_ambient 0
+scoreboard players set @a security_ambient 0
+scoreboard players set @a admin_ambient 0
+scoreboard players set @a o2_ambient 0
+scoreboard players set @a storage_ambient 0
+scoreboard players set @a upengine_ambient 0
+scoreboard players set @a loweng_ambient 0
 
 ### Tags ###
 

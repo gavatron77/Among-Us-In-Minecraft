@@ -37,6 +37,7 @@ execute as @a[scores={lobby_timer=199}] run scoreboard players set @s game_state
 # Remove Taskbar
 execute as @a[scores={lobby_timer=199}] run bossbar set tasks:completed visible false
 execute as @a[scores={lobby_timer=199}] run bossbar set emergency:button visible false
+execute as @a[scores={lobby_timer=199}] run bossbar set voting:time visible false
 
 execute as @a[scores={lobby_timer=199}] run bossbar set sabotage:comms visible false
 execute as @a[scores={lobby_timer=199}] run bossbar set sabotage:lights visible false

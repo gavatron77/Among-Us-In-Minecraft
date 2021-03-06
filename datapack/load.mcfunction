@@ -8,6 +8,19 @@ scoreboard objectives add Tasks_Completed dummy
 
 # Sounds
 scoreboard objectives add comms_ambient dummy
+scoreboard objectives add weapons_ambient dummy
+scoreboard objectives add shields_ambient dummy
+scoreboard objectives add cafe_ambient dummy
+scoreboard objectives add medbay_ambient dummy
+scoreboard objectives add reactor_ambient dummy
+scoreboard objectives add security_ambient dummy
+scoreboard objectives add admin_ambient dummy
+scoreboard objectives add storage_ambient dummy
+scoreboard objectives add loweng_ambient dummy
+scoreboard objectives add upengine_ambient dummy
+scoreboard objectives add o2_ambient dummy
+scoreboard objectives add elect_ambient dummy
+scoreboard objectives add main_ambient dummy
 
 # Global
 scoreboard objectives add global_delay dummy

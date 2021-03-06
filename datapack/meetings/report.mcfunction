@@ -1,6 +1,6 @@
 
 # Give Stick
-replaceitem entity @a[scores={in_task=0},tag=!ghost] hotbar.1 minecraft:carrot_on_a_stick{CustomModelData:6390,Unbreakable:1,display:{Name:"{\"text\":\"Report\"}"}} 1
+replaceitem entity @a[scores={in_task=0},tag=!ghost,tag=in_game] hotbar.1 minecraft:carrot_on_a_stick{CustomModelData:6390,Unbreakable:1,display:{Name:"{\"text\":\"Report\"}"}} 1
 
 execute as @a[scores={carrot_noises=1..},tag=!ghost,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:"{\"text\":\"Report\"}"}}}}] at @s if entity @e[tag=corpse,distance=..4] run tag @s add report
 

@@ -23,6 +23,7 @@ execute as @s[tag=pass_scanned] run tag @s add initialized
 execute as @s[tag=pass_scanned] run clear @s
 execute as @s[tag=pass_scanned] run function au:initialize/randomize_colors
 execute as @s[tag=pass_scanned] if score @s game_state matches 0.. run tag @s add in_game
+execute as @s[tag=pass_scanned] run effect clear @s
 
 # Finalize initiation
 tag @s[tag=pass_scanned] remove pass_scanned
