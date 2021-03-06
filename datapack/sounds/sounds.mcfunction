@@ -1,6 +1,6 @@
 
 # Communications
-execute as @a[scores={comms_ambient=0}] store success score @s comms_ambient run playsound minecraft:block.anvil.use ambient @s 123.30 51.00 -7.29 1
+execute as @a[scores={comms_ambient=0}] store success score @s comms_ambient run playsound minecraft:block.anvil.use ambient @s 123.30 51.00 -7.29 1.5
 execute as @a if score @s comms_ambient matches 1 run scoreboard players set @s comms_ambient 10
 execute as @a[scores={comms_ambient=2..}] run scoreboard players remove @s comms_ambient 1
 execute as @a[scores={comms_ambient=2}] run scoreboard players set @s comms_ambient 0
@@ -12,7 +12,7 @@ execute as @a[scores={weapons_ambient=2..}] run scoreboard players remove @s wea
 execute as @a[scores={weapons_ambient=2}] run scoreboard players set @s weapons_ambient 0
 
 # Main Ambient
-execute as @a[scores={main_ambient=0}] at @s store success score @s main_ambient run playsound minecraft:ui.loom.take_result ambient @s ~ ~ ~ 10
+execute as @a[scores={main_ambient=0}] at @s store success score @s main_ambient run playsound minecraft:ui.loom.take_result ambient @s ~ ~ ~ 1
 execute as @a if score @s main_ambient matches 1 run scoreboard players set @s main_ambient 10
 execute as @a[scores={main_ambient=2..}] run scoreboard players remove @s main_ambient 1
 execute as @a[scores={main_ambient=2}] run scoreboard players set @s main_ambient 0
@@ -37,7 +37,7 @@ execute as @a[scores={elect_ambient=2}] run scoreboard players set @s elect_ambi
 
 # Medbay
 execute as @a[scores={medbay_ambient=0}] at @s store success score @s medbay_ambient run playsound minecraft:entity.creeper.death ambient @s 66.47 50.00 -61.51 1
-execute as @a if score @s medbay_ambient matches 1 run scoreboard players set @s medbay_ambient 10
+execute as @a if score @s medbay_ambient matches 1 run scoreboard players set @s medbay_ambient 8
 execute as @a[scores={medbay_ambient=2..}] run scoreboard players remove @s medbay_ambient 1
 execute as @a[scores={medbay_ambient=2}] run scoreboard players set @s medbay_ambient 0
 
@@ -73,11 +73,11 @@ execute as @a[scores={storage_ambient=2}] run scoreboard players set @s storage_
 
 # Engines
 execute as @a[scores={upengine_ambient=0}] at @s store success score @s upengine_ambient run playsound minecraft:entity.blaze.death ambient @s 31.38 54.00 -81.56 1
-execute as @a if score @s upengine_ambient matches 1 run scoreboard players set @s upengine_ambient 10
+execute as @a if score @s upengine_ambient matches 1 run scoreboard players set @s upengine_ambient 5
 execute as @a[scores={upengine_ambient=2..}] run scoreboard players remove @s upengine_ambient 1
 execute as @a[scores={upengine_ambient=2}] run scoreboard players set @s upengine_ambient 0
 
 execute as @a[scores={loweng_ambient=0}] at @s store success score @s loweng_ambient run playsound minecraft:entity.blaze.death ambient @s 30.47 54.00 -30.64 1
-execute as @a if score @s loweng_ambient matches 1 run scoreboard players set @s loweng_ambient 10
+execute as @a if score @s loweng_ambient matches 1 run scoreboard players set @s loweng_ambient 5
 execute as @a[scores={loweng_ambient=2..}] run scoreboard players remove @s loweng_ambient 1
 execute as @a[scores={loweng_ambient=2}] run scoreboard players set @s loweng_ambient 0
