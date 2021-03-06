@@ -1,4 +1,4 @@
-say init
+
 # Misc
 effect clear @a
 team leave @a
@@ -7,6 +7,9 @@ scoreboard players set crew_alive kill_cooldown 0
 scoreboard players set total_crew kill_cooldown 0
 tag @a add initialized
 kill @e[type=boat]
+
+# Sounds
+scoreboard players set @a comms_ambient 0
 
 ### Tags ###
 
@@ -149,10 +152,11 @@ scoreboard players set @a Done_Upper 0
 
 # Task Bar
 bossbar add tasks:completed "Tasks Completed"
-execute store result score Total_Tasks Main_Cooldowns run scoreboard players get Common_Tasks Settings
-execute if score Common_Tasks Settings matches 1.. run scoreboard players operation Total_Tasks Main_Cooldowns += @r two
-scoreboard players operation Total_Tasks Main_Cooldowns += Short_Tasks Settings
-scoreboard players operation Total_Tasks Main_Cooldowns += Long_Tasks Settings
+execute store result score Single_Tasks Main_Cooldowns run scoreboard players get Common_Tasks Settings
+execute if score Common_Tasks Settings matches 1.. run scoreboard players operation Single_Tasks Main_Cooldowns += @r two
+scoreboard players operation Single_Tasks Main_Cooldowns += Short_Tasks Settings
+scoreboard players operation Single_Tasks Main_Cooldowns += Long_Tasks Settings
+execute store result score Total_Tasks Main_Cooldowns run scoreboard players get Single_Tasks Main_Cooldowns 
 bossbar set tasks:completed color green
 bossbar set tasks:completed players @a
 bossbar set tasks:completed value 0

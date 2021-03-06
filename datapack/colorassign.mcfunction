@@ -1,15 +1,16 @@
-replaceitem block 93 67 -88 container.0 red_dye 1
-replaceitem block 93 67 -88 container.1 pink_dye 1
-replaceitem block 93 67 -88 container.2 black_dye 1
-replaceitem block 93 67 -88 container.3 brown_dye 1
-replaceitem block 93 67 -88 container.9 blue_dye 1
-replaceitem block 93 67 -88 container.10 orange_dye 1
-replaceitem block 93 67 -88 container.11 white_dye 1
-replaceitem block 93 67 -88 container.12 cyan_dye 1
-replaceitem block 93 67 -88 container.18 green_dye 1
-replaceitem block 93 67 -88 container.19 yellow_dye 1
-replaceitem block 93 67 -88 container.20 purple_dye 1
-replaceitem block 93 67 -88 container.21 lime_dye 1
+
+replaceitem block 93 67 -88 container.0 minecraft:red_dye{display:{Name:'[{"text":"Shift Click to Select Color","color":"dark_red","bold":true},{"text":"","color":"dark_red","bold":false}]'}} 1
+replaceitem block 93 67 -88 container.1 minecraft:pink_dye{display:{Name:'[{"text":"Shift Click to Select Color","color":"light_purple","bold":true},{"text":"","color":"light_purple","bold":false}]'}} 1
+replaceitem block 93 67 -88 container.2 minecraft:black_dye{display:{Name:'[{"text":"Shift Click to Select Color","color":"black","bold":true},{"text":"","color":"black","bold":false}]'}} 1
+replaceitem block 93 67 -88 container.3 minecraft:brown_dye{display:{Name:'[{"text":"Shift Click to Select Color","color":"dark_gray","bold":true},{"text":"","color":"dark_gray","bold":false}]'}} 1
+replaceitem block 93 67 -88 container.9 minecraft:blue_dye{display:{Name:'[{"text":"Shift Click to Select Color","color":"dark_blue","bold":true},{"text":"","color":"dark_blue","bold":false}]'}} 1
+replaceitem block 93 67 -88 container.10 minecraft:orange_dye{display:{Name:'[{"text":"Shift Click to Select Color","color":"gold","bold":true},{"text":"","color":"gold","bold":false}]'}} 1
+replaceitem block 93 67 -88 container.11 minecraft:white_dye{display:{Name:'[{"text":"Shift Click to Select Color","color":"white","bold":true},{"text":"","color":"white","bold":false}]'}} 1
+replaceitem block 93 67 -88 container.12 minecraft:cyan_dye{display:{Name:'[{"text":"Shift Click to Select Color","color":"aqua","bold":true},{"text":"","color":"aqua","bold":false}]'}} 1
+replaceitem block 93 67 -88 container.18 minecraft:green_dye{display:{Name:'[{"text":"Shift Click to Select Color","color":"dark_green","bold":true},{"text":"","color":"dark_green","bold":false}]'}} 1
+replaceitem block 93 67 -88 container.19 minecraft:yellow_dye{display:{Name:'[{"text":"Shift Click to Select Color","color":"yellow","bold":true},{"text":"","color":"yellow","bold":false}]'}} 1
+replaceitem block 93 67 -88 container.20 minecraft:purple_dye{display:{Name:'[{"text":"Shift Click to Select Color","color":"dark_purple","bold":true},{"text":"","color":"dark_purple","bold":false}]'}} 1
+replaceitem block 93 67 -88 container.21 minecraft:lime_dye{display:{Name:'[{"text":"Shift Click to Select Color","color":"green","bold":true},{"text":"","color":"green","bold":false}]'}} 1
 
 execute as @a[tag=red] run replaceitem block 93 67 -88 container.0 air 1
 execute as @a[tag=pink] run replaceitem block 93 67 -88 container.1 air 1

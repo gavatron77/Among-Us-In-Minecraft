@@ -376,8 +376,9 @@ scoreboard players set crew_alive kill_cooldown 0
 execute as @a[tag=crewmate,tag=!ghost] run scoreboard players add crew_alive kill_cooldown 1
 scoreboard players set total_crew kill_cooldown 0
 execute as @a[tag=crewmate] run scoreboard players add total_crew kill_cooldown 1
-execute as @a[limit=1,scores={lobby_timer=50}] run scoreboard players operation Total_Tasks Main_Cooldowns *= total_crew kill_cooldown
-execute as @a[limit=1,scores={lobby_timer=50}] store result bossbar tasks:completed max run scoreboard players get Total_Tasks Main_Cooldowns
+execute store result score Total_Tasks Main_Cooldowns run scoreboard players get Single_Tasks Main_Cooldowns 
+execute as @a[limit=1] run scoreboard players operation Total_Tasks Main_Cooldowns *= total_crew kill_cooldown
+execute as @a[limit=1] store result bossbar tasks:completed max run scoreboard players get Total_Tasks Main_Cooldowns
 scoreboard players set imp_alive kill_cooldown 0
 execute as @a[tag=imposter,tag=!ghost] run scoreboard players add imp_alive kill_cooldown 1
 

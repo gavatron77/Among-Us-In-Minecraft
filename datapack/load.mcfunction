@@ -6,6 +6,9 @@ scoreboard objectives add ewlamps trigger
 scoreboard objectives add playercount dummy
 scoreboard objectives add Tasks_Completed dummy
 
+# Sounds
+scoreboard objectives add comms_ambient dummy
+
 # Global
 scoreboard objectives add global_delay dummy
 scoreboard objectives add in_task dummy
@@ -16,8 +19,8 @@ scoreboard objectives add emergency_press minecraft.custom:minecraft.bell_ring
 scoreboard objectives add RNG dummy
 scoreboard objectives add ambient_delay dummy
 scoreboard objectives add Main_Cooldowns dummy
-title @a times 20 120 20
 scoreboard objectives add just_joined minecraft.custom:minecraft.leave_game
+title @a times 20 120 20
 
 # Cameras
 scoreboard objectives add security dummy
@@ -175,6 +178,8 @@ scoreboard players set modulo ambient_delay 20
 scoreboard objectives add ambient_delay
 scoreboard players set modulo ambient_delay 20
 scoreboard players set range global_delay 0
+
+scoreboard objectives add colors_taken dummy
 
 say Loaded!
 

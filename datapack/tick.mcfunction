@@ -63,6 +63,8 @@ execute as @a[scores={game_state=2,global_delay=1},limit=1] run kill @e[type=min
 execute as @a[scores={game_state=2,global_delay=1},limit=1] run kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:leather_chestplate"}}]
 execute as @a[scores={game_state=2,global_delay=1},limit=1] run kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:leather_leggings"}}]
 execute as @a[scores={game_state=2,global_delay=1},limit=1] run kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:leather_boots"}}]
+execute as @a[scores={game_state=2,global_delay=1},limit=1] run effect give @a minecraft:saturation 1000000 1 true
+execute as @a[scores={game_state=2,global_delay=5},limit=1] run function au:sounds/sounds
 
 # Ambient Noise
 #execute as @a[scores={global_delay=1},limit=1] as @a at @s run playsound minecraft:entity.generic.splash master @s ~ ~ ~ 2

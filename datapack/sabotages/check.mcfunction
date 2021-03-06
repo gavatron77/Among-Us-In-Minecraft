@@ -87,7 +87,7 @@ execute as @a[tag=imposter,scores={sab_toggle=0,doors_toggle=1}] if score @s sab
 execute as @a[tag=imposter,scores={sab_toggle=1,doors_toggle=0}] if score @s sab_timer matches 1.. unless score @s lights_toggle matches 1 unless score @s comms_toggle matches 1 run scoreboard players operation sab_bar kill_cooldown = @a[tag=imposter,limit=1] sab_timer
 execute as @a[tag=imposter,scores={sab_toggle=1,doors_toggle=1}] if score @s sab_timer matches 1.. unless score @s lights_toggle matches 1 unless score @s comms_toggle matches 1 run scoreboard players operation sab_bar kill_cooldown = @a[tag=imposter,limit=1] sab_timer
 execute as @a[tag=imposter,scores={sab_toggle=0,doors_toggle=0}] if score @s sab_timer matches 1 unless score @s lights_toggle matches 1 unless score @s comms_toggle matches 1 run scoreboard players operation sab_bar kill_cooldown = @a[tag=imposter,limit=1] sab_timer
-execute at @r if score sab_bar kill_cooldown matches -1.. run scoreboard players remove sab_bar kill_cooldown 60
+execute if score sab_bar kill_cooldown matches -1.. run scoreboard players remove sab_bar kill_cooldown 60
 
 execute as @a[tag=imposter,scores={sab_toggle=0,doors_toggle=1}] if score @s sab_timer matches 1.. unless score @s lights_toggle matches 1 store result bossbar sabotage:reactor value run scoreboard players get sab_bar kill_cooldown
 execute as @a[tag=imposter,scores={sab_toggle=1,doors_toggle=0}] if score @s sab_timer matches 1.. unless score @s lights_toggle matches 1 store result bossbar sabotage:reactor value run scoreboard players get sab_bar kill_cooldown

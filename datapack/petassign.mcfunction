@@ -1,8 +1,8 @@
 
 # Set Pet Select in Computer
-replaceitem block 93 67 -88 container.26 milk_bucket 1
-replaceitem block 93 67 -88 container.7 feather 1
-replaceitem block 93 67 -88 container.8 wither_rose 1
+replaceitem block 93 67 -88 container.26 minecraft:milk_bucket{display:{Name:'[{"text":"Clear Pet","color":"white","bold":true},{"text":"","color":"white","bold":false}]'}} 1
+replaceitem block 93 67 -88 container.7 minecraft:feather{display:{Name:'[{"text":"Mini Crewmate","color":"blue","bold":true},{"text":"","color":"blue","bold":false}]'}} 1
+replaceitem block 93 67 -88 container.8 minecraft:wither_rose{display:{Name:'[{"text":"Turtle","color":"blue","bold":true},{"text":"","color":"blue","bold":false}]'}} 1
 
 # Tell when someone chooses a pet
 tag @a[nbt={Inventory:[{id:"minecraft:wither_rose"}]}] add get_pet

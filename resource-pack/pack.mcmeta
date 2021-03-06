@@ -2,12 +2,5 @@
     "pack": {
         "pack_format": 5,
         "description": "Haha neck go cronch"
-    },
-    "language": {
-        "am_us": {
-            "name": "§eAmong Us Asset",
-            "region": "Space",
-            "bidirectional": false
-        }
     }
 }
