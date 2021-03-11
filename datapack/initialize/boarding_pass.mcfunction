@@ -2,10 +2,11 @@
 gamemode adventure @s
 
 # Teleport player to boarding pass room
-execute positioned 96 75 -86 unless entity @s[dx=5,dy=3,dz=5] run tp @s 99.5 77.00 -82.5 0 0
+execute positioned 96 75 -86 unless entity @s[dx=5,dy=3,dz=5] run tp @s 99.5 76.00 -82.5 0 0
+execute positioned 96 75 -86 unless entity @s[dx=5,dy=3,dz=5] run clear @s
 
 # Check if player has scanned their pass
-execute if block 99 77 -85 minecraft:lectern[has_book=true] unless data entity @s {Inventory:[{Slot:0b,id:"minecraft:written_book"}]} run tag @s add pass_scanned
+execute as @a[tag=!initialized,scores={just_joined=1..}] if block 99 77 -85 minecraft:lectern[has_book=true] unless data entity @s {Inventory:[{Slot:0b,id:"minecraft:written_book"}]} run tag @s add pass_scanned
 
 # Teleport player to lobby or cafe respectively
 execute if score @s[tag=pass_scanned] game_state matches -1 run tp @s 99.0 66.0 -82.5 -180 0
@@ -13,10 +14,10 @@ execute unless score @s[tag=pass_scanned] game_state matches -1 run tp @s 101 53
 execute unless score @s[tag=pass_scanned] game_state matches -1 run effect give @s invisibility 1000000 1 true
 
 # Clear armor
-replaceitem entity @s armor.head air
-replaceitem entity @s armor.chest air
-replaceitem entity @s armor.legs air
-replaceitem entity @s armor.feet air
+execute as @a[tag=!initialized,scores={just_joined=1..}] run replaceitem entity @s armor.head air
+execute as @a[tag=!initialized,scores={just_joined=1..}] run replaceitem entity @s armor.chest air
+execute as @a[tag=!initialized,scores={just_joined=1..}] run replaceitem entity @s armor.legs air
+execute as @a[tag=!initialized,scores={just_joined=1..}] run replaceitem entity @s armor.feet air
 
 # Clear inventory, give random color, add correct tags
 execute as @s[tag=pass_scanned] run tag @s add initialized
@@ -24,6 +25,8 @@ execute as @s[tag=pass_scanned] run clear @s
 execute as @s[tag=pass_scanned] run function au:initialize/randomize_colors
 execute as @s[tag=pass_scanned] if score @s game_state matches 0.. run tag @s add in_game
 execute as @s[tag=pass_scanned] run effect clear @s
+
+execute as @s[tag=pass_scanned] run scoreboard players set @s just_joined 0
 
 # Finalize initiation
 tag @s[tag=pass_scanned] remove pass_scanned

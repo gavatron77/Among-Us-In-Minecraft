@@ -12,7 +12,7 @@ execute as @a[scores={lobby_timer=199}] run clear @s
 # Tp Players To Setup Screen 
 execute as @a[scores={lobby_timer=199}] run effect give @a invisibility 10 1 true
 execute as @a[scores={lobby_timer=199}] run tp @a 58 53 -103 180 0
-execute as @a[scores={lobby_timer=199}] at @s run playsound minecraft:entity.wither.spawn master @s ~ ~ ~
+execute as @a[scores={lobby_timer=199}] at @s run playsound minecraft:entity.wither.spawn record @s ~ ~ ~ 0.5
 
 
 # Summons Armorstands

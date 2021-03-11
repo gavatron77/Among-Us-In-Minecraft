@@ -1,4 +1,5 @@
 
+team leave @s
 tag @s remove in_game
 tag @s remove crewmate
 tag @s remove imposter
@@ -128,11 +129,12 @@ tag @s remove white
 tag @s remove brown
 tag @s remove black
 
-execute store result score @s game_state run scoreboard players get @a[tag=initialized,limit=1] game_state
-
+# Match game state to other players. if no one else is online, set game state to lobby
+execute if score players_online Main_Cooldowns matches 1 run scoreboard players set @s game_state -1
+execute if score players_online Main_Cooldowns matches 2.. store result score @s game_state run scoreboard players get @a[tag=initialized,limit=1] game_state
 
 function au:initialize/boarding_pass
 
+# Set to ghost if players are in game
 execute as @s[tag=in_game] run tag @s add ghost
 
-scoreboard players set @s just_joined 0

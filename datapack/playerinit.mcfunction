@@ -203,6 +203,7 @@ execute store result bossbar voting:time max run scoreboard players get Voting_T
 bossbar set voting:time color blue
 bossbar set voting:time players @a
 bossbar set voting:time value 0
+bossbar set voting:time visible false
 
 # Emergency Button
 bossbar add emergency:button "Emergency Button Cooldown"
@@ -210,6 +211,7 @@ execute store result bossbar emergency:button max run scoreboard players get Eme
 bossbar set emergency:button color yellow
 bossbar set emergency:button players @a
 bossbar set emergency:button value 0
+bossbar set emergency:button visible false
 
 # Out of Game
 scoreboard players set @a lobby_timer 0

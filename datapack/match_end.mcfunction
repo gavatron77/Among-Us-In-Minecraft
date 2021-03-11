@@ -63,8 +63,8 @@ execute as @a[scores={lobby_timer=109}] as @a[tag=loser] run title @s title {"te
 execute as @a[scores={lobby_timer=109}] as @a[tag=winner] run title @s title {"text":"Victory","bold":true,"color":"blue"}
 
 # Play victory sounds
-execute as @a[tag=imposter,limit=1,scores={lobby_timer=199}] at @s if entity @s[tag=winner] run execute as @a[distance=..25] at @s run playsound minecraft:entity.ghast.warn master @s ~ ~ ~
-execute as @a[tag=crewmate,limit=1,scores={lobby_timer=199}] at @s if entity @s[tag=winner] run execute as @a[distance=..25] at @s run playsound minecraft:entity.ghast.death master @s ~ ~ ~
+execute as @a[tag=imposter,limit=1,scores={lobby_timer=199}] at @s if entity @s[tag=winner] run execute as @a[distance=..25] at @s run playsound minecraft:entity.ghast.warn record @s ~ ~ ~ 0.3
+execute as @a[tag=crewmate,limit=1,scores={lobby_timer=199}] at @s if entity @s[tag=winner] run execute as @a[distance=..25] at @s run playsound minecraft:entity.ghast.death record @s ~ ~ ~ 0.3
 
 # Back to Lobby
 execute as @a[scores={lobby_timer=0}] run tag @a remove in_game

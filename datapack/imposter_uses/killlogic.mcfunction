@@ -14,9 +14,9 @@ execute if score Kill_Distance Settings matches 4 at @a[tag=imposter,tag=!ghost,
 execute if score Kill_Distance Settings matches 5 as @a[tag=imposter,tag=!ghost,scores={carrot_noises=1..,kill_cooldown=0},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:"{\"text\":\"Kill\"}"}}}}] at @s if entity @e[tag=crewmate,tag=!ghost,distance=..5] run tag @s add killing
 execute if score Kill_Distance Settings matches 5 at @a[tag=imposter,tag=!ghost,scores={carrot_noises=1..,kill_cooldown=0},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:"{\"text\":\"Kill\"}"}}}}] as @e[tag=crewmate,tag=!ghost,distance=..5,limit=1] run tag @s add dying
 
-execute as @a[tag=dying] at @s run playsound minecraft:entity.cat.hiss master @s ~ ~ ~
-execute as @a[tag=dying] at @s run playsound minecraft:entity.enderman.ambient master @s ~ ~ ~
-execute as @a[tag=killing] at @s run playsound minecraft:entity.enderman.stare master @s ~ ~ ~
+execute as @a[tag=dying] at @s run playsound minecraft:entity.cat.hiss block @s ~ ~ ~ 
+execute as @a[tag=dying] at @s run playsound minecraft:entity.enderman.ambient block @s ~ ~ ~
+execute as @a[tag=killing] at @s run playsound minecraft:entity.enderman.stare block @s ~ ~ ~ 2
 
 # If killing Remove their kill stick
 execute as @a[tag=killing] run clear @s minecraft:carrot_on_a_stick{display:{Name:"{\"text\":\"Kill\"}"}}

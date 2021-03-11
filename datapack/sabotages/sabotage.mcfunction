@@ -4,7 +4,7 @@ execute as @a[tag=imposter] if score @s reactor_toggle matches 1.. if score @s s
 execute as @a[tag=imposter] if score @s reactor_toggle matches 1.. if score @s sab_timer matches 0 run scoreboard players set @a[tag=imposter] sab_timer 120
 execute as @a[tag=imposter] if score @s reactor_toggle matches 1 if score @s sab_timer matches 120 run scoreboard players set @a[tag=imposter] rectrfail_toggle 1
 execute as @a[tag=imposter] if score @s rectrfail_toggle matches 1 if score @s sab_alarm matches 0 run scoreboard players set @a[tag=imposter] sab_alarm 4
-execute as @a[tag=imposter,scores={sab_alarm=4},limit=1] if score @s rectrfail_toggle matches 1 run execute as @a at @s run playsound minecraft:entity.wither.death ambient @s
+execute as @a[tag=imposter,scores={sab_alarm=4},limit=1] if score @s rectrfail_toggle matches 1 run execute as @a at @s run playsound minecraft:entity.wither.death record @s ~ ~ ~ 0.5
 execute as @a[tag=imposter,scores={sab_alarm=4},limit=1] if score @s rectrfail_toggle matches 1 run execute as @a at @s run title @a title {"text":"Reactor Meltdown","bold":true,"color":"red"}
 execute as @a[tag=imposter,limit=1] if score @s sab_alarm matches 1.. if score @s rectrfail_toggle matches 1 run scoreboard players remove @a[tag=imposter] sab_alarm 1
 execute as @a[tag=imposter] if block 19 46 -56 minecraft:redstone_lamp[lit=true] run bossbar set sabotage:reactor visible false
@@ -23,7 +23,7 @@ execute as @a[tag=imposter,limit=1] if score @s o2_toggle matches 1 if score @s 
 execute as @a[tag=imposter,limit=1] if score @s o2_toggle matches 1 if score @s sab_timer matches 118 run setblock 124 48 -66 minecraft:air
 execute as @a[tag=imposter] if score @s o2_toggle matches 1 if score @s sab_timer matches 117 run scoreboard players set @a[tag=imposter] o2_fail_toggle 1
 execute as @a[tag=imposter] if score @s o2_fail_toggle matches 1 if score @s sab_alarm matches 0 run scoreboard players set @a[tag=imposter] sab_alarm 4
-execute as @a[tag=imposter,scores={sab_alarm=4},limit=1] if score @s o2_fail_toggle matches 1 run execute as @a at @s run playsound minecraft:entity.wither.death ambient @s
+execute as @a[tag=imposter,scores={sab_alarm=4},limit=1] if score @s o2_fail_toggle matches 1 run execute as @a at @s run playsound minecraft:entity.wither.death record @s ~ ~ ~ 0.5
 execute as @a[tag=imposter,scores={sab_alarm=4},limit=1] if score @s o2_fail_toggle matches 1 run execute as @a at @s run title @a title {"text":"Oxygen Depletion","bold":true,"color":"red"}
 execute as @a[tag=imposter,limit=1] if score @s sab_alarm matches 1.. if score @s o2_fail_toggle matches 1 run scoreboard players remove @a[tag=imposter] sab_alarm 1
 execute as @a[tag=imposter] if block 122 46 -66 minecraft:redstone_lamp[lit=true] run bossbar set sabotage:oxygen visible false

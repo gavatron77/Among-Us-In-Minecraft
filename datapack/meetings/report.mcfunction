@@ -6,7 +6,7 @@ execute as @a[scores={carrot_noises=1..},tag=!ghost,nbt={SelectedItem:{id:"minec
 
 execute as @a[tag=report,limit=1] run function au:round_end
 
-execute as @a[tag=report] run playsound minecraft:entity.ender_dragon.death ambient @a ~ ~ ~ 10 1
+execute as @a[tag=report] at @a run playsound minecraft:entity.ender_dragon.death record @a ~ ~ ~ 0.2
 
 # Stop Sabatoges
 
