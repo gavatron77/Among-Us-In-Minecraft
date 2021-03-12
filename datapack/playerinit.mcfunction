@@ -7,6 +7,7 @@ scoreboard players set crew_alive kill_cooldown 0
 scoreboard players set total_crew kill_cooldown 0
 tag @a add initialized
 kill @e[type=boat]
+scoreboard players set Tasks_Visual 0
 
 # Sounds
 scoreboard players set @a comms_ambient 0
@@ -22,6 +23,7 @@ scoreboard players set @a o2_ambient 0
 scoreboard players set @a storage_ambient 0
 scoreboard players set @a upengine_ambient 0
 scoreboard players set @a loweng_ambient 0
+scoreboard players set @a step_time 0
 
 ### Tags ###
 

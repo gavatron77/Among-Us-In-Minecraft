@@ -1,8 +1,6 @@
 
-### Check button states
-#execute if block 93 68 -102 jungle_button[powered=true] run scoreboard players add Player_Task Settings 1
-#execute if block 93 66 -102 jungle_button[powered=true] run scoreboard players remove Player_Task Settings 1
 
+### Default Settings
 execute if block 93 66 -102 jungle_button[powered=true] run scoreboard players set Kill_Cooldown Settings 20
 execute if block 93 66 -102 jungle_button[powered=true] run scoreboard players set Kill_Distance Settings 3
 execute if block 93 66 -102 jungle_button[powered=true] run scoreboard players set Player_Speed Settings 1
@@ -11,6 +9,8 @@ execute if block 93 66 -102 jungle_button[powered=true] run scoreboard players s
 execute if block 93 66 -102 jungle_button[powered=true] run scoreboard players set Common_Tasks Settings 1
 execute if block 93 66 -102 jungle_button[powered=true] run scoreboard players set Short_Tasks Settings 4
 execute if block 93 66 -102 jungle_button[powered=true] run scoreboard players set Long_Tasks Settings 2
+
+### Check button states
 
 execute if block 93 68 -104 jungle_button[powered=true] run scoreboard players add Kill_Cooldown Settings 1
 execute if block 93 66 -104 jungle_button[powered=true] run scoreboard players remove Kill_Cooldown Settings 1
@@ -28,7 +28,9 @@ execute if block 104 68 -106 jungle_button[powered=true] run scoreboard players 
 execute if block 104 66 -106 jungle_button[powered=true] run scoreboard players remove Voting_Time Settings 1
 
 execute if block 102 67 -108 lever[powered=false] run scoreboard players set Visual_Tasks Settings 1
+execute if block 102 67 -108 lever[powered=false] run scoreboard players set @a Tasks_Visual 1
 execute if block 102 67 -108 lever[powered=true] run scoreboard players set Visual_Tasks Settings 0
+execute if block 102 67 -108 lever[powered=true] run scoreboard players set @a Tasks_Visual 0
 
 execute if block 95 68 -108 jungle_button[powered=true] run scoreboard players add Common_Tasks Settings 1
 execute if block 95 66 -108 jungle_button[powered=true] run scoreboard players remove Common_Tasks Settings 1

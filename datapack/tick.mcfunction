@@ -25,9 +25,9 @@ execute in minecraft:the_nether as @p if score @s global_delay matches 20 run sc
 #execute in minecraft:the_nether as @a[scores={game_state=-1},limit=1] run function au:entry
 
 # Lobby
-execute in minecraft:the_nether as @a[scores={game_state=-1,global_delay=0}] run function au:setcolors
+execute as @a[scores={game_state=-1,global_delay=0}] run function au:setcolors
 execute in minecraft:the_nether if score @a[limit=1] game_state matches -1 run function au:lobby_settings
-execute in minecraft:the_nether as @a[scores={game_state=1..6,global_delay=0}] run function au:setcolors
+execute as @a[scores={game_state=1..6,global_delay=0}] run function au:setcolors
 execute in minecraft:the_nether as @a[scores={game_state=-1},limit=1] run function au:colorassign
 execute in minecraft:the_nether as @a[scores={game_state=-1},limit=1] run function au:petassign
 
@@ -49,7 +49,7 @@ execute in minecraft:the_nether as @a[tag=in_game,scores={game_state=2,global_de
 # Check For Tasks
 execute in minecraft:the_nether as @a[tag=in_game,scores={game_state=2,global_delay=5},limit=1] run function au:tasks/check
 execute in minecraft:the_nether as @a[tag=in_game,scores={game_state=2,global_delay=15},limit=1] run function au:tasks/check
-execute in minecraft:the_nether run function au:sounds
+#execute in minecraft:the_nether run function au:sounds
 
 # Check For Sabotages
 execute in minecraft:the_nether as @a[tag=in_game,scores={game_state=2,global_delay=0},tag=imposter,limit=1] run function au:sabotages/check
@@ -63,8 +63,9 @@ execute in minecraft:the_nether as @a[scores={game_state=2,global_delay=1},limit
 execute in minecraft:the_nether as @a[scores={game_state=2,global_delay=1},limit=1] run kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:leather_chestplate"}}]
 execute in minecraft:the_nether as @a[scores={game_state=2,global_delay=1},limit=1] run kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:leather_leggings"}}]
 execute in minecraft:the_nether as @a[scores={game_state=2,global_delay=1},limit=1] run kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:leather_boots"}}]
-execute in minecraft:the_nether as @a[scores={game_state=2,global_delay=1},limit=1] run effect give @a minecraft:saturation 1000000 1 true
+execute in minecraft:the_nether as @a[scores={global_delay=1},limit=1] run effect give @a minecraft:saturation 1000000 1 true
 execute in minecraft:the_nether as @a[scores={global_delay=5},limit=1] run function au:sounds/sounds
+execute in minecraft:the_nether as @a[limit=1] run function au:sounds/footsteps
 
 # Meetings
 execute in minecraft:the_nether as @a[tag=in_game,scores={game_state=2,global_delay=0..},limit=1] run function au:meetings/report

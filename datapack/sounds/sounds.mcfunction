@@ -81,3 +81,4 @@ execute as @a[tag=in_game,scores={loweng_ambient=0}] at @s store success score @
 execute as @a if score @s loweng_ambient matches 1 run scoreboard players set @s loweng_ambient 5
 execute as @a[tag=in_game,scores={loweng_ambient=2..}] run scoreboard players remove @s loweng_ambient 1
 execute as @a[tag=in_game,scores={loweng_ambient=2}] run scoreboard players set @s loweng_ambient 0
+

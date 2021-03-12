@@ -161,12 +161,10 @@ execute as @a[tag=green,tag=weapons] at @e[tag=green_weapons] if blocks ~2 ~ ~4 
 execute as @a[tag=lime,tag=weapons] at @e[tag=lime_weapons] if blocks ~2 ~ ~4 ~10 ~4 ~17 107 65 50 all run function au:tasks/weapons_clear
 
 # Pew
-execute as @a[scores={game_state=2,global_delay=15,in_task=1..},limit=1] run summon slime 147 51 -97 {Size:0,Silent:1,Motion:[5.0,0.0,0.0],CustomName:"\"Pew\""}
-execute as @a[scores={game_state=2,global_delay=5,in_task=1..},limit=1] run summon slime 155 53 -90 {Size:0,Silent:1,Motion:[5.0,0.0,0.0],CustomName:"\"Pew\""}
-execute as @a[scores={game_state=2,global_delay=15,in_task=1..},limit=1] run summon slime 155 53 -90 {Size:0,Silent:1,Motion:[5.0,0.0,0.0],CustomName:"\"Pew\""}
-execute as @a[scores={game_state=2,global_delay=5,in_task=1..},limit=1] run summon slime 151 53 -94 {Size:0,Silent:1,Motion:[5.0,0.0,0.0],CustomName:"\"Pew\""}
-
-
+execute as @a[scores={game_state=2,global_delay=15,in_task=1..,Tasks_Visual=1..},limit=1] run summon slime 147 51 -97 {Size:0,Silent:1,Motion:[5.0,0.0,0.0],CustomName:"\"Pew\""}
+execute as @a[scores={game_state=2,global_delay=5,in_task=1..,Tasks_Visual=1..},limit=1] run summon slime 155 53 -90 {Size:0,Silent:1,Motion:[5.0,0.0,0.0],CustomName:"\"Pew\""}
+execute as @a[scores={game_state=2,global_delay=15,in_task=1..,Tasks_Visual=1..},limit=1] run summon slime 155 53 -90 {Size:0,Silent:1,Motion:[5.0,0.0,0.0],CustomName:"\"Pew\""}
+execute as @a[scores={game_state=2,global_delay=5,in_task=1..,Tasks_Visual=1..},limit=1] run summon slime 151 53 -94 {Size:0,Silent:1,Motion:[5.0,0.0,0.0],CustomName:"\"Pew\""}
 
 
 

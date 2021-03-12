@@ -111,7 +111,7 @@ summon minecraft:armor_stand 123 50 -16 {Rotation:[0.0f,0.0f],Tags:["Room12"]}
 # Lower Engine
 summon minecraft:armor_stand 32 53 -32 {Rotation:[0.0f,0.0f],Tags:["Room1"]}
 # Electrical
-summon minecraft:armor_stand 66 50 -28 {Rotation:[0.0f,0.0f],Tags:["Room14"]}
+summon minecraft:armor_stand 73 50 -33 {Rotation:[0.0f,0.0f],Tags:["Room14"]}
 # Upper Engine
 summon minecraft:armor_stand 31 54 -81 {Rotation:[0.0f,0.0f],Tags:["Room3"]}
 # Reactor

@@ -5,6 +5,7 @@ scoreboard objectives add nslamps trigger
 scoreboard objectives add ewlamps trigger
 scoreboard objectives add playercount dummy
 scoreboard objectives add Tasks_Completed dummy
+scoreboard objectives add Tasks_Visual dummy
 
 # Sounds
 scoreboard objectives add comms_ambient dummy
@@ -21,6 +22,10 @@ scoreboard objectives add upengine_ambient dummy
 scoreboard objectives add o2_ambient dummy
 scoreboard objectives add elect_ambient dummy
 scoreboard objectives add main_ambient dummy
+scoreboard objectives add sprinted minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add traveled dummy
+scoreboard objectives add walk minecraft.custom:minecraft.walk_one_cm
+scoreboard objectives add step_time dummy
 
 # Global
 scoreboard objectives add global_delay dummy

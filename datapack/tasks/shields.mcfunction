@@ -1,7 +1,7 @@
 
 # Shields Visual
-fill 153 53 -22 149 51 -18 minecraft:white_concrete replace minecraft:light_gray_concrete
-fill 153 53 -22 149 51 -18 minecraft:sea_lantern replace minecraft:gray_concrete
+execute if score Visual_Tasks Settings matches 1 run fill 153 53 -22 149 51 -18 minecraft:white_concrete replace minecraft:light_gray_concrete
+execute if score Visual_Tasks Settings matches 1 run fill 153 53 -22 149 51 -18 minecraft:sea_lantern replace minecraft:gray_concrete
 
 # Clear Task Area
 execute as @a[tag=shields,tag=blue,scores={task_request=1..}] at @e[tag=blue_shields] run fill ~ ~ ~ ~11 ~6 ~10 air

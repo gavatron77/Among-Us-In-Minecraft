@@ -72,18 +72,18 @@ execute as @p[tag=get_gas,tag=ghost,tag=lime,scores={task_request=1..}] at @s ru
 
 
 # Tp to Task
-execute as @a[tag=get_gas,tag=blue,scores={task_request=1..}] at @e[tag=blue_get_gas] run tp @s ~6 ~ ~1 0 0
-execute as @a[tag=get_gas,tag=red,scores={task_request=1..}] at @e[tag=red_get_gas] run tp @s ~6 ~ ~1 0 0
-execute as @a[tag=get_gas,tag=yellow,scores={task_request=1..}] at @e[tag=yellow_get_gas] run tp @s ~6 ~ ~1 0 0
-execute as @a[tag=get_gas,tag=orange,scores={task_request=1..}] at @e[tag=orange_get_gas] run tp @s ~6 ~ ~1 0 0
-execute as @a[tag=get_gas,tag=black,scores={task_request=1..}] at @e[tag=black_get_gas] run tp @s ~6 ~ ~1 0 0
-execute as @a[tag=get_gas,tag=white,scores={task_request=1..}] at @e[tag=white_get_gas] run tp @s ~6 ~ ~1 0 0
-execute as @a[tag=get_gas,tag=cyan,scores={task_request=1..}] at @e[tag=cyan_get_gas] run tp @s ~6 ~ ~1 0 0
-execute as @a[tag=get_gas,tag=purple,scores={task_request=1..}] at @e[tag=purple_get_gas] run tp @s ~6 ~ ~1 0 0
-execute as @a[tag=get_gas,tag=pink,scores={task_request=1..}] at @e[tag=pink_get_gas] run tp @s ~6 ~ ~1 0 0
-execute as @a[tag=get_gas,tag=brown,scores={task_request=1..}] at @e[tag=brown_get_gas] run tp @s ~6 ~ ~1 0 0
-execute as @a[tag=get_gas,tag=green,scores={task_request=1..}] at @e[tag=green_get_gas] run tp @s ~6 ~ ~1 0 0
-execute as @a[tag=get_gas,tag=lime,scores={task_request=1..}] at @e[tag=lime_get_gas] run tp @s ~6 ~ ~1 0 0
+execute as @a[tag=get_gas,tag=blue,scores={task_request=1..}] at @e[tag=blue_get_gas] run tp @s ~6 ~1 ~1 0 0
+execute as @a[tag=get_gas,tag=red,scores={task_request=1..}] at @e[tag=red_get_gas] run tp @s ~6 ~1 ~1 0 0
+execute as @a[tag=get_gas,tag=yellow,scores={task_request=1..}] at @e[tag=yellow_get_gas] run tp @s ~6 ~1 ~1 0 0
+execute as @a[tag=get_gas,tag=orange,scores={task_request=1..}] at @e[tag=orange_get_gas] run tp @s ~6 ~1 ~1 0 0
+execute as @a[tag=get_gas,tag=black,scores={task_request=1..}] at @e[tag=black_get_gas] run tp @s ~6 ~1 ~1 0 0
+execute as @a[tag=get_gas,tag=white,scores={task_request=1..}] at @e[tag=white_get_gas] run tp @s ~6 ~1 ~1 0 0
+execute as @a[tag=get_gas,tag=cyan,scores={task_request=1..}] at @e[tag=cyan_get_gas] run tp @s ~6 ~1 ~1 0 0
+execute as @a[tag=get_gas,tag=purple,scores={task_request=1..}] at @e[tag=purple_get_gas] run tp @s ~6 ~1 ~1 0 0
+execute as @a[tag=get_gas,tag=pink,scores={task_request=1..}] at @e[tag=pink_get_gas] run tp @s ~6 ~1 ~1 0 0
+execute as @a[tag=get_gas,tag=brown,scores={task_request=1..}] at @e[tag=brown_get_gas] run tp @s ~6 ~1 ~1 0 0
+execute as @a[tag=get_gas,tag=green,scores={task_request=1..}] at @e[tag=green_get_gas] run tp @s ~6 ~1 ~1 0 0
+execute as @a[tag=get_gas,tag=lime,scores={task_request=1..}] at @e[tag=lime_get_gas] run tp @s ~6 ~1 ~1 0 0
 
 # Reset Task Request
 execute as @a[tag=get_gas,tag=blue,scores={task_request=1..}] run scoreboard players reset @s task_request
