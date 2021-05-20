@@ -98,7 +98,7 @@ execute as @a[tag=trash2,tag=brown] at @e[tag=brown_trash] if blocks ~3 ~0 ~4 ~3
 execute as @a[tag=trash2,tag=green] at @e[tag=green_trash] if blocks ~3 ~0 ~4 ~3 ~1 ~5 173 58 58 all at @e[type=minecraft:armor_stand,tag=green] run scoreboard players reset Storage-EmptyGarbage Tasks_Green
 execute as @a[tag=trash2,tag=lime] at @e[tag=lime_trash] if blocks ~3 ~0 ~4 ~3 ~1 ~5 173 58 58 all at @e[type=minecraft:armor_stand,tag=lime] run scoreboard players reset Storage-EmptyGarbage Tasks_Lime
 
-# Give Part 2
+# Visual
 execute as @a[tag=trash2,tag=blue] at @e[tag=blue_trash] if blocks ~3 ~0 ~4 ~3 ~1 ~5 173 58 58 all at @e[type=minecraft:armor_stand,tag=blue] positioned 104.52 51.00 -5.70 run particle minecraft:sweep_attack ~ ~2 ~ -3 1 0 1 100
 execute as @a[tag=trash2,tag=red] at @e[tag=red_trash] if blocks ~3 ~0 ~4 ~3 ~1 ~5 173 58 58 all at @e[type=minecraft:armor_stand,tag=red] positioned 104.52 51.00 -5.70 run particle minecraft:sweep_attack ~ ~2 ~ -3 1 0 1 100
 execute as @a[tag=trash2,tag=yellow] at @e[tag=yellow_trash] if blocks ~3 ~0 ~4 ~3 ~1 ~5 173 58 58 all at @e[type=minecraft:armor_stand,tag=yellow] positioned 104.52 51.00 -5.70 run particle minecraft:sweep_attack ~ ~2 ~ -3 1 0 1 100
@@ -112,6 +112,7 @@ execute as @a[tag=trash2,tag=brown] at @e[tag=brown_trash] if blocks ~3 ~0 ~4 ~3
 execute as @a[tag=trash2,tag=green] at @e[tag=green_trash] if blocks ~3 ~0 ~4 ~3 ~1 ~5 173 58 58 all at @e[type=minecraft:armor_stand,tag=green] positioned 104.52 51.00 -5.70 run particle minecraft:sweep_attack ~ ~2 ~ -3 1 0 1 100
 execute as @a[tag=trash2,tag=lime] at @e[tag=lime_trash] if blocks ~3 ~0 ~4 ~3 ~1 ~5 173 58 58 all at @e[type=minecraft:armor_stand,tag=lime] positioned 104.52 51.00 -5.70 run particle minecraft:sweep_attack ~ ~2 ~ -3 1 0 1 100
 
+# Give Part 2
 execute as @a[tag=trash2,tag=blue] at @e[tag=blue_trash] if blocks ~3 ~0 ~4 ~3 ~1 ~5 173 58 58 all at @e[type=minecraft:armor_stand,tag=blue] run scoreboard players set @s in_task 0
 execute as @a[tag=trash2,tag=red] at @e[tag=red_trash] if blocks ~3 ~0 ~4 ~3 ~1 ~5 173 58 58 all at @e[type=minecraft:armor_stand,tag=red] run scoreboard players set @s in_task 0
 execute as @a[tag=trash2,tag=yellow] at @e[tag=yellow_trash] if blocks ~3 ~0 ~4 ~3 ~1 ~5 173 58 58 all at @e[type=minecraft:armor_stand,tag=yellow] run scoreboard players set @s in_task 0

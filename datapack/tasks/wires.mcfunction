@@ -42,18 +42,18 @@ execute as @a[tag=wires,tag=green,scores={task_request=1..}] at @e[tag=green_wir
 execute as @a[tag=wires,tag=lime,scores={task_request=1..}] at @e[tag=lime_wires] run clone -51 56 48 -40 62 58 ~ ~-1 ~ masked force
 
 # Randomize Wires
-execute as @a[tag=wires,tag=blue,scores={task_request=1..}] at @e[tag=blue_wires] run function au:tasks/wires_randomize
-execute as @a[tag=wires,tag=red,scores={task_request=1..}] at @e[tag=red_wires] run function au:tasks/wires_randomize
-execute as @a[tag=wires,tag=yellow,scores={task_request=1..}] at @e[tag=yellow_wires] run function au:tasks/wires_randomize
-execute as @a[tag=wires,tag=orange,scores={task_request=1..}] at @e[tag=orange_wires] run function au:tasks/wires_randomize
-execute as @a[tag=wires,tag=black,scores={task_request=1..}] at @e[tag=black_wires] run function au:tasks/wires_randomize
-execute as @a[tag=wires,tag=white,scores={task_request=1..}] at @e[tag=white_wires] run function au:tasks/wires_randomize
-execute as @a[tag=wires,tag=cyan,scores={task_request=1..}] at @e[tag=cyan_wires] run function au:tasks/wires_randomize
-execute as @a[tag=wires,tag=purple,scores={task_request=1..}] at @e[tag=purple_wires] run function au:tasks/wires_randomize
-execute as @a[tag=wires,tag=pink,scores={task_request=1..}] at @e[tag=pink_wires] run function au:tasks/wires_randomize
-execute as @a[tag=wires,tag=brown,scores={task_request=1..}] at @e[tag=brown_wires] run function au:tasks/wires_randomize
-execute as @a[tag=wires,tag=green,scores={task_request=1..}] at @e[tag=green_wires] run function au:tasks/wires_randomize
-execute as @a[tag=wires,tag=lime,scores={task_request=1..}] at @e[tag=lime_wires] run function au:tasks/wires_randomize
+execute if @a[tag=wires,tag=blue,scores={task_request=1..}] as @e[tag=blue_wires] at @s run function au:tasks/wires_randomize
+execute if @a[tag=wires,tag=red,scores={task_request=1..}] at @e[tag=red_wires] at @s run function au:tasks/wires_randomize
+execute if @a[tag=wires,tag=yellow,scores={task_request=1..}] at @e[tag=yellow_wires] at @s run function au:tasks/wires_randomize
+execute if @a[tag=wires,tag=orange,scores={task_request=1..}] at @e[tag=orange_wires] at @s run function au:tasks/wires_randomize
+execute if @a[tag=wires,tag=black,scores={task_request=1..}] at @e[tag=black_wires] at @s run function au:tasks/wires_randomize
+execute if @a[tag=wires,tag=white,scores={task_request=1..}] at @e[tag=white_wires] at @s run function au:tasks/wires_randomize
+execute if @a[tag=wires,tag=cyan,scores={task_request=1..}] at @e[tag=cyan_wires] at @s run function au:tasks/wires_randomize
+execute if @a[tag=wires,tag=purple,scores={task_request=1..}] at @e[tag=purple_wires] at @s run function au:tasks/wires_randomize
+execute if @a[tag=wires,tag=pink,scores={task_request=1..}] at @e[tag=pink_wires] at @s run function au:tasks/wires_randomize
+execute if @a[tag=wires,tag=brown,scores={task_request=1..}] at @e[tag=brown_wires] at @s run function au:tasks/wires_randomize
+execute if @a[tag=wires,tag=green,scores={task_request=1..}] at @e[tag=green_wires] at @s run function au:tasks/wires_randomize
+execute if @a[tag=wires,tag=lime,scores={task_request=1..}] at @e[tag=lime_wires] at @s run function au:tasks/wires_randomize
 
 # Summon Dummy in Their Place
 execute as @p[tag=wires,tag=!ghost,tag=blue,scores={task_request=1..}] at @s run summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1,ArmorItems:[{Count:1,id:leather_boots,tag:{display:{color:3949738}}},{Count:1,id:leather_leggings,tag:{display:{color:3949738}}},{Count:1,id:leather_chestplate,tag:{display:{color:3949738}}},{Count:1,id:leather_helmet,tag:{display:{color:3949738}}}], NoGravity:1b, NoBasePlate: 1b,DisabledSlots:2039583,Tags:["blue","crewmate","as_sealed","as_locked"]}
